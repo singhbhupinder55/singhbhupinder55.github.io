@@ -5,7 +5,7 @@ title: Bhupinder Singh's Software Engineering Portfolio
 
 # 👋 Welcome to My Portfolio
 
-Hi, I'm **Bhupinder Singh**, a senior Software Engineering student at **Arizona State University** (ASU), graduating in 2026 with a 3.94 GPA.
+Hi, I'm **Bhupinder Singh**, a senior Software Engineering student at **Arizona State University (ASU)**, graduating in 2026 with a 3.94 GPA.
 
 This portfolio highlights the academic projects, labs, and skills I’ve developed across multiple software engineering courses.
 
@@ -32,23 +32,23 @@ Modern frontend web development using HTML, CSS, JavaScript, and Firebase.
 
 ## 🛠️ Skills Gained
 
-- **Languages**: Java, Python, C++, SQL, JavaScript
-- **Frameworks**: Spring Boot, Vue.js
-- **Tools**: Docker, Git, IntelliJ, Postman
-- **Security**: SQL Injection, XSS, Authentication, RBAC
-- **Testing**: JUnit, SpotBugs, FindSecBugs
+- **Languages**: Java, Python, C++, SQL, JavaScript  
+- **Frameworks**: Spring Boot, Vue.js  
+- **Tools**: Docker, Git, IntelliJ, Postman  
+- **Security**: SQL Injection, XSS, Authentication, RBAC  
+- **Testing**: JUnit, SpotBugs, FindSecBugs  
 - **Cloud & Deployment**: AWS EC2, GitHub Pages, DockerHub
 
 ---
 
 ## 📫 Let's Connect
 
-- 📍 Warner Robins, GA
-- 📧 [Email me](mailto:bhupindersingh.asu@gmail.com)
-- 🔗 [LinkedIn (coming soon)](#)
+- 📍 Forsyth, GA  
+- 📧 [Email me](mailto:bs690155@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/bhupinder-singh-asu/)  
 - 🔗 [GitHub](https://github.com/singhbhupinder55)
 
 ---
 
 Thanks for visiting!  
-Explore my repos above or [contact me](mailto:bhupindersingh.asu@gmail.com) for opportunities in **Software Engineering, Backend Development, or Security.**
+Explore my repos above or [contact me](mailto:bs690155@gmail.com) for opportunities in **Software Engineering, Backend Development, or Security.**

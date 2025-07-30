@@ -14,16 +14,18 @@ title: Bhupinder Singh's Software Engineering Portfolio
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+<table>
+  <tr>
+    <td style="width: 180px; vertical-align: top;">
+      <img src="profile.jpg" alt="Bhupinder Singh" width="160" style="border-radius: 50%;">
+    </td>
+    <td style="padding-left: 20px; vertical-align: top;">
+      <p>Hi, I'm <strong>Bhupinder Singh</strong>, a senior Software Engineering student at <strong>Arizona State University (ASU)</strong>, graduating in 2026 with a 3.94 GPA.</p>
+      <p>This portfolio highlights the academic projects, labs, and skills I’ve developed across multiple software engineering courses.</p>
+    </td>
+  </tr>
+</table>
 
-  <img src="profile.jpg" alt="Bhupinder Singh" width="160" style="border-radius: 50%;">
-
-  <div>
-    <p>Hi, I'm <strong>Bhupinder Singh</strong>, a senior Software Engineering student at <strong>Arizona State University (ASU)</strong>, graduating in 2026 with a 3.94 GPA.</p>
-    <p>This portfolio highlights the academic projects, labs, and skills I’ve developed across multiple software engineering courses.</p>
-  </div>
-
-</div>
 
 ---
 

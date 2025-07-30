@@ -14,19 +14,19 @@ This portfolio highlights the academic projects, labs, and skills I’ve develop
 ## 📚 Featured Repositories
 
 ### 🔹 [ser421-labs](https://github.com/singhbhupinder55/ser421-labs)
-Spring Boot, REST APIs, GraphQL, and full-stack web applications.
+Full-stack labs using Spring Boot, Vue.js, GraphQL, REST APIs, and OWASP security tools. *(Spring 2025 @ ASU)*
 
-### 🔹 [ser335-labs](https://github.com/singhbhupinder55/ser335-labs)
-Secure coding, penetration testing, Docker, and defensive programming.
+### 🔹 [SER_335-secure-coding-labs](https://github.com/singhbhupinder55/SER_335-secure-coding-labs)
+Secure software labs focusing on RBAC, encryption, SQL injection, penetration testing, and static analysis. *(Spring 2025 @ ASU)*
 
-### 🔹 [ser316-projects](https://github.com/singhbhupinder55/ser316-projects)
-Agile team projects with GitHub workflows, issue tracking, and GUI development.
+### 🔹 [SER_316-agile-project-fall24](https://github.com/singhbhupinder55/SER_316-agile-project-fall24)
+Agile group project implementing black-box, white-box, and static analysis testing with continuous integration. *(Fall 2024 @ ASU)*
 
-### 🔹 [ser321-assignments](https://github.com/singhbhupinder55/ser321-assignments)
-Distributed systems, socket programming, and Java concurrency.
+### 🔹 [SER_316-design-patterns-simulator](https://github.com/singhbhupinder55/SER_316-design-patterns-simulator)
+Design Patterns Simulator demonstrating Singleton, Factory, and Strategy patterns in a startup simulation game. *(Fall 2024 @ ASU)*
 
-### 🔹 [ser315-web](https://github.com/singhbhupinder55/ser315-web)
-Modern frontend web development using HTML, CSS, JavaScript, and Firebase.
+### 🔹 [SER_321-distributed-systems-spring25](https://github.com/singhbhupinder55/SER_321-distributed-systems-spring25)
+Distributed systems assignments covering client-server architecture, TCP/UDP sockets, GraphQL, and Eliza chatbot. *(Spring 2025 @ ASU)*
 
 ---
 

@@ -19,155 +19,218 @@
 <main class="container">
   <section class="section grid cols-2">
 
-    <!-- E-Commerce Platform -->
+    <!-- ======= YOUR PROJECTS ======= -->
+
+    <!-- Survey REST API -->
     <article class="card project">
-      <h2>E-Commerce Platform</h2>
-      <p>Shopping web app with product browsing, cart, checkout, user authentication and order processing.</p>
+      <h2>Survey REST API</h2>
+      <p>Backend service for creating surveys, questions, and responses with authentication and data validation.</p>
       <div class="stack">
-        <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">MySQL</span>
+        <span class="tag">Spring Boot</span><span class="tag">JPA/Hibernate</span><span class="tag">MySQL</span><span class="tag">Postman</span>
       </div>
       <ul>
-        <li>Built REST endpoints for products, users, orders and payments</li>
-        <li>Implemented JWT auth, role based access and validation</li>
-        <li>Used React components and state management for cart and checkout flow</li>
+        <li>Designed REST endpoints and DTOs; implemented validation and error handling</li>
+        <li>Wrote Postman collections for integration testing</li>
       </ul>
-      <p><b>What I learned:</b> full stack API design, secure auth patterns, database modeling, client state management.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> API design, persistence mapping, testing strategies.</p>
     </article>
 
-    <!-- Chat App -->
+    <!-- Jeopardy Trivia Game -->
     <article class="card project">
-      <h2>Chat App</h2>
-      <p>Real time messaging app that connects to multiple servers using TCP and UDP.</p>
+      <h2>Jeopardy Trivia Game</h2>
+      <p>Browser game with categories, scoring, and Double Jeopardy using the OpenTDB API.</p>
       <div class="stack">
-        <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">TCP</span><span class="tag">UDP</span><span class="tag">Gradle</span>
+        <span class="tag">Vue.js</span><span class="tag">JavaScript</span><span class="tag">OpenTDB API</span>
       </div>
       <ul>
-        <li>Socket programming with multithreading for concurrent clients</li>
-        <li>Designed message protocol and reconnect logic</li>
+        <li>Built stateful UI with category boards and timers</li>
+        <li>Cached questions with localStorage to reduce API calls</li>
       </ul>
-      <p><b>What I learned:</b> networking fundamentals, concurrency, thread safety and UI event loops.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> component state, API integration, UX polish.</p>
     </article>
 
-    <!-- AI Face Recognition -->
+    <!-- Secure File Manager (JFM) -->
     <article class="card project">
-      <h2>AI-Powered Face Recognition System</h2>
-      <p>Real time face detection and recognition using classical vision plus deep learning.</p>
+      <h2>Secure File Manager (JFM)</h2>
+      <p>Desktop app for managing files securely with authentication and role-based access.</p>
       <div class="stack">
-        <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span>
+        <span class="tag">Java</span><span class="tag">Security</span>
       </div>
       <ul>
-        <li>Implemented CNN based feature extraction and face matching</li>
-        <li>Optimized preprocessing and inference pipeline for live camera input</li>
+        <li>Implemented salted password hashing and RBAC</li>
+        <li>Refactored insecure command execution to safe ProcessBuilder usage</li>
       </ul>
-      <p><b>What I learned:</b> model pipelines, data augmentation, accuracy vs latency tradeoffs.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> auth best practices, code safety, refactoring.</p>
     </article>
 
-    <!-- AI Movie Recommender -->
+    <!-- ARENA Tournament System -->
     <article class="card project">
-      <h2>AI Movie Recommendation System</h2>
-      <p>Hybrid recommender that mixes content based signals with simple collaborative filtering.</p>
+      <h2>ARENA Tournament System</h2>
+      <p>Multi-user platform for hosting and playing Connect 4 matches with standings.</p>
       <div class="stack">
-        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-Learn</span>
+        <span class="tag">Java</span><span class="tag">OOP</span>
       </div>
       <ul>
-        <li>Used TF-IDF and cosine similarity for content features</li>
-        <li>Combined user histories to improve relevance for cold start users</li>
+        <li>Implemented game logic and turn validation</li>
+        <li>Contributed to match orchestration and score tracking</li>
       </ul>
-      <p><b>What I learned:</b> feature engineering, evaluation metrics, offline testing of ranking models.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> modular design, testing game logic.</p>
     </article>
 
-    <!-- Gym Scheduling -->
+    <!-- Silicon Valley Simulator -->
+    <article class="card project">
+      <h2>Silicon Valley Simulator</h2>
+      <p>Simulation project applying classic design patterns with planned GUI enhancements.</p>
+      <div class="stack">
+        <span class="tag">Java</span><span class="tag">Design Patterns</span>
+      </div>
+      <ul>
+        <li>Applied Strategy, Factory, and Observer patterns</li>
+        <li>Outlined UI architecture for future expansion</li>
+      </ul>
+      <p><b>What I learned:</b> pattern selection, maintainable architecture.</p>
+    </article>
+
+    <!-- Gym Scheduling System -->
     <article class="card project">
       <h2>Gym Scheduling System</h2>
-      <p>Booking platform for administrators, trainers and customers with time slots and approvals.</p>
+      <p>Appointment booking and management for administrators, trainers, and customers.</p>
       <div class="stack">
         <span class="tag">Java</span><span class="tag">Gradle</span><span class="tag">MySQL</span>
       </div>
       <ul>
-        <li>Modeled schedules, roles and permissions in relational schema</li>
-        <li>Implemented conflict detection and simple reporting</li>
+        <li>Modeled roles, time slots, and conflict detection</li>
+        <li>Implemented validation and transactional updates</li>
       </ul>
-      <p><b>What I learned:</b> relational design, transactions and validation rules.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> relational schema design, data integrity rules.</p>
     </article>
 
-    <!-- Games Box Online -->
-    <article class="card project">
-      <h2>Games Box Online</h2>
-      <p>Multi game platform with socket based client server and real time sessions deployed on AWS.</p>
-      <div class="stack">
-        <span class="tag">Java</span><span class="tag">AWS</span><span class="tag">gRPC</span><span class="tag">MySQL</span><span class="tag">JavaFX</span>
-      </div>
-      <ul>
-        <li>Multithreading for multiple rooms and players</li>
-        <li>State sync and persistence for active sessions</li>
-      </ul>
-      <p><b>What I learned:</b> distributed state, reliability, deployment on cloud VMs.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
-    </article>
-
-    <!-- Lego Roomba -->
+    <!-- Lego Collecting Roomba -->
     <article class="card project">
       <h2>Lego Collecting Roomba Robot</h2>
-      <p>Autonomous Arduino robot that navigates and collects Legos using sensors and motor control.</p>
+      <p>Autonomous robot that navigates and collects Legos using sensors and motor control.</p>
       <div class="stack">
         <span class="tag">Arduino</span><span class="tag">Sensors</span><span class="tag">DC Motors</span>
       </div>
       <ul>
-        <li>Integrated distance sensors for obstacle avoidance</li>
-        <li>Programmed motion control and pickup routine</li>
+        <li>Tuned obstacle avoidance and pickup routines</li>
+        <li>Integrated sensor feedback for navigation</li>
       </ul>
-      <p><b>What I learned:</b> embedded control, sensor fusion basics, calibration.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Project Notes</a></div>
+      <p><b>What I learned:</b> embedded control, calibration, iterative testing.</p>
     </article>
 
     <!-- Image Enhancement -->
     <article class="card project">
       <h2>Image Enhancement Project</h2>
-      <p>Tool that applies a color shift filter to improve clarity in faded images.</p>
+      <p>Tool to restore color and clarity in faded images using a custom color-shift filter.</p>
       <div class="stack">
         <span class="tag">C/C++</span>
       </div>
       <ul>
-        <li>Implemented per channel transforms and histogram inspection</li>
-        <li>Worked with raw pixel buffers for speed</li>
+        <li>Manipulated pixel buffers and channel transforms</li>
+        <li>Benchmarked runtime on sample datasets</li>
       </ul>
-      <p><b>What I learned:</b> image representation, performance tradeoffs, testing on sample sets.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> image representation, performance tuning.</p>
     </article>
 
-    <!-- VBA Ledger -->
+    <!-- VBA Ledger System -->
     <article class="card project">
       <h2>VBA Ledger System for Apartment Building</h2>
-      <p>Desktop ledger with user roles to track tenants, payments and balances.</p>
+      <p>Ledger application with roles, forms, and reports for tenant management.</p>
       <div class="stack">
         <span class="tag">VBA</span><span class="tag">Excel</span><span class="tag">Access</span>
       </div>
       <ul>
-        <li>Built forms and macros for data entry and validation</li>
-        <li>Generated monthly and annual summaries</li>
+        <li>Built macros for validation and monthly reporting</li>
+        <li>Streamlined entry flows for non-technical users</li>
       </ul>
-      <p><b>What I learned:</b> quick internal tools, working with non developer users.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> rapid tooling, user-centric workflows.</p>
     </article>
 
-    <!-- Digital Logic -->
+    <!-- Digital Logic Circuit Simulator -->
     <article class="card project">
       <h2>Digital Logic Circuit Simulator</h2>
-      <p>Simulator using gates like AND, OR, NOT and XOR with timing analysis and FSMs.</p>
+      <p>Simulator with logic gates, timing analysis, and finite state machines.</p>
       <div class="stack">
         <span class="tag">Logisim</span><span class="tag">Digital Logic</span>
       </div>
       <ul>
-        <li>Built combinational and sequential circuits</li>
-        <li>Analyzed behavior with timing diagrams and state machines</li>
+        <li>Designed combinational and sequential circuits</li>
+        <li>Analyzed timing diagrams and FSM behavior</li>
       </ul>
-      <p><b>What I learned:</b> digital design, abstraction and verification basics.</p>
-      <div class="links"><a class="btn" href="YOUR_REPO_URL" target="_blank">Repo</a></div>
+      <p><b>What I learned:</b> hardware fundamentals, verification basics.</p>
+    </article>
+
+    <!-- ======= FROM AMAN’S LIST THAT YOU ALSO DID ======= -->
+
+    <!-- E-Commerce Platform -->
+    <article class="card project">
+      <h2>E-Commerce Platform</h2>
+      <p>Shopping web app with product browsing, cart, authentication, and order processing.</p>
+      <div class="stack">
+        <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">MySQL</span>
+      </div>
+      <ul>
+        <li>Built product, user, and order services with REST endpoints</li>
+        <li>Implemented JWT-based auth and role checks</li>
+      </ul>
+      <p><b>What I learned:</b> full-stack architecture, secure auth, DB modeling.</p>
+    </article>
+
+    <!-- Chat App -->
+    <article class="card project">
+      <h2>Chat App</h2>
+      <p>Real-time messaging connecting to multiple servers over TCP/UDP with multithreading.</p>
+      <div class="stack">
+        <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">TCP/UDP</span><span class="tag">Gradle</span>
+      </div>
+      <ul>
+        <li>Socket protocol, reconnection strategy, and concurrent handling</li>
+        <li>UI event loop integration with network I/O</li>
+      </ul>
+      <p><b>What I learned:</b> concurrency, networking, resilient clients.</p>
+    </article>
+
+    <!-- AI Face Recognition -->
+    <article class="card project">
+      <h2>AI-Powered Face Recognition System</h2>
+      <p>Real-time detection and recognition using OpenCV with TensorFlow CNN features.</p>
+      <div class="stack">
+        <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span>
+      </div>
+      <ul>
+        <li>Preprocessing, model inference pipeline, and face matching</li>
+        <li>Balanced accuracy vs latency for live camera input</li>
+      </ul>
+      <p><b>What I learned:</b> ML pipelines, data augmentation, evaluation.</p>
+    </article>
+
+    <!-- AI Movie Recommender -->
+    <article class="card project">
+      <h2>AI Movie Recommendation System</h2>
+      <p>Hybrid recommender mixing content-based TF-IDF/cosine with simple collaborative filtering.</p>
+      <div class="stack">
+        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-Learn</span>
+      </div>
+      <ul>
+        <li>Engineered text features; computed cosine similarity</li>
+        <li>Evaluated relevance and cold-start behavior</li>
+      </ul>
+      <p><b>What I learned:</b> feature engineering, ranking metrics, offline testing.</p>
+    </article>
+
+    <!-- Games Box Online -->
+    <article class="card project">
+      <h2>Games Box Online</h2>
+      <p>Multi-game platform with socket client-server, multithreading, and session persistence on AWS.</p>
+      <div class="stack">
+        <span class="tag">Java</span><span class="tag">AWS</span><span class="tag">gRPC</span><span class="tag">MySQL</span><span class="tag">JavaFX</span>
+      </div>
+      <ul>
+        <li>Managed multiple rooms/players concurrently</li>
+        <li>Synced state and stored game outcomes</li>
+      </ul>
+      <p><b>What I learned:</b> distributed state, concurrency, cloud deployment.</p>
     </article>
 
   </section>

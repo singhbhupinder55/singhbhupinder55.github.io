@@ -112,6 +112,10 @@ a:hover{
   }
 }
 
+.hero > div{
+  min-width:0;
+}
+
 .hero img{
   width:120px;
   height:120px;
@@ -399,8 +403,10 @@ hr{
   }
 
   .hero{
-    grid-template-columns:1fr;
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
     padding:18px;
     overflow:hidden;
   }
@@ -408,7 +414,12 @@ hr{
   .hero img{
     width:110px;
     height:110px;
-    margin:0 auto;
+    margin:0 0 14px 0;
+  }
+
+  .hero > div{
+    width:100%;
+    min-width:0;
   }
 
   .hero h1{
@@ -461,7 +472,7 @@ hr{
   .taglist,
   .tags,
   .project .stack{
-    justify-content:center;
+    justify-content:flex-start;
   }
 }
 

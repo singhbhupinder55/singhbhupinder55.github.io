@@ -16,7 +16,8 @@
   box-sizing:border-box;
 }
 
-html, body{
+html,
+body{
   margin:0;
   padding:0;
   background:var(--bg);
@@ -77,6 +78,7 @@ a:hover{
   align-items:center;
   justify-content:flex-end;
   gap:12px 18px;
+  min-width:0;
 }
 
 .nav .links a{
@@ -93,7 +95,7 @@ a:hover{
 /* ===== Hero (Home) ===== */
 .hero{
   display:grid;
-  grid-template-columns:120px 1fr;
+  grid-template-columns:minmax(0, 120px) minmax(0, 1fr);
   gap:18px;
   align-items:center;
   background:var(--panel);
@@ -101,11 +103,12 @@ a:hover{
   border-radius:18px;
   padding:22px;
   box-shadow:var(--shadow);
+  min-width:0;
 }
 
 @media (min-width:760px){
   .hero{
-    grid-template-columns:160px 1fr;
+    grid-template-columns:minmax(0, 160px) minmax(0, 1fr);
   }
 }
 
@@ -135,12 +138,30 @@ a:hover{
   margin:0 0 8px 0;
 }
 
+/* ===== Hero overflow protection ===== */
+.hero,
+.hero > div,
+.hero .kv,
+.hero .kv div,
+.hero a,
+.hero p,
+.hero h1{
+  min-width:0;
+  overflow-wrap:break-word;
+  word-wrap:break-word;
+}
+
+.hero a{
+  word-break:break-word;
+}
+
 /* ===== Key-value block ===== */
 .kv{
   display:grid;
   grid-template-columns:120px 1fr;
   gap:6px 12px;
   margin-top:8px;
+  min-width:0;
 }
 
 .kv b{
@@ -154,6 +175,7 @@ a:hover{
   flex-wrap:wrap;
   gap:8px;
   margin-top:8px;
+  min-width:0;
 }
 
 .tag{
@@ -172,6 +194,7 @@ a:hover{
   flex-wrap:wrap;
   gap:10px;
   margin-top:12px;
+  min-width:0;
 }
 
 .btn{
@@ -274,6 +297,7 @@ a:hover{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
+  min-width:0;
 }
 
 .project .stack .tag{
@@ -306,6 +330,7 @@ hr{
   align-items:center;
   gap:1.5rem;
   flex-wrap:wrap;
+  min-width:0;
 }
 
 .profile-photo{
@@ -377,6 +402,7 @@ hr{
     grid-template-columns:1fr;
     text-align:center;
     padding:18px;
+    overflow:hidden;
   }
 
   .hero img{
@@ -397,6 +423,13 @@ hr{
     grid-template-columns:1fr;
     gap:4px;
     text-align:left;
+    width:100%;
+  }
+
+  .hero .kv div,
+  .hero .kv a,
+  .hero .kv span{
+    max-width:100%;
   }
 
   .btnbar{

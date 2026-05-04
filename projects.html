@@ -30,19 +30,16 @@
   <section class="section">
     <h1>Selected Projects</h1>
     <p>
-      These projects best reflect my experience in backend systems, secure software, distributed applications,
-      software architecture, and full-stack development.
+      These projects highlight my experience building scalable backend systems, distributed applications, and production-ready software.
     </p>
   </section>
 
   <section class="section grid cols-2">
 
     <article class="card project">
-      <h2>NASA Psyche Mission Educational Game</h2>
+      <h2>NASA Psyche Mission Educational Game ⭐</h2>
       <p>
-        Final-year sponsor-backed capstone project building an educational game to support public engagement for NASA’s Psyche mission.
-      </p>
-
+  Developed a browser-based educational game for NASA’s Psyche mission to support public engagement and mission awareness.</p>
       <div class="stack">
         <span class="tag">Unity</span>
         <span class="tag">C#</span>
@@ -52,13 +49,47 @@
       </div>
 
       <ul>
-        <li>Built and refined gameplay systems, UI interactions, and mission-themed features in Unity using C#</li>
-        <li>Worked in a team-based development environment with sponsors, sprint planning, testing, and reviews</li>
-        <li>Contributed to a real-world academic project with external stakeholders and public-facing goals</li>
+        <li>Developed mission-based gameplay systems and interactive UI for a browser-deployed educational game aligned with NASA Psyche objectives</li>
+        <li>Integrated backend APIs to support scalable features and real-time interactions across multiple game modules</li>
+        <li>Collaborated in an agile team with external stakeholders to deliver production-ready features across multiple sprints</li>  
       </ul>
 
       <p><b>Why it matters:</b> This project demonstrates collaborative development, sponsor communication, iterative delivery, and user-facing software design.</p>
+      
+      <div class="project-links">
+      <a href="https://missiontopsyche-platinum.github.io/platinum_25a_phone_game-se/" target="_blank" class="btn">🎮 Play Live</a>
+      <a href="https://github.com/MissionToPsyche-Platinum/platinum_25a_phone_game-se" target="_blank" class="btn">💻 View Code</a>
+      </div>
+
     </article>
+    <article class="card project">
+  <h2>Real-Time Notification System ⭐</h2>
+  <p>
+    Scalable backend system enabling real-time messaging and low-latency communication across distributed users.
+  </p>
+
+  <div class="stack">
+    <span class="tag">Java</span>
+    <span class="tag">Spring Boot</span>
+    <span class="tag">WebSockets</span>
+    <span class="tag">Redis</span>
+    <span class="tag">REST APIs</span>
+  </div>
+
+  <ul>
+    <li>Designed and implemented a real-time notification system using WebSockets for bidirectional communication between clients and server</li>
+    <li>Leveraged Redis Pub/Sub to handle asynchronous messaging and enable scalable event-driven architecture</li>
+    <li>Handled concurrent user connections and optimized message delivery for low latency and high throughput</li>
+    <li>Supported multiple concurrent client connections and ensured reliable message delivery under load</li>
+  </ul>
+
+  <p>
+    <b>Why it matters:</b> This project demonstrates distributed systems thinking, real-time communication, scalability, and backend performance optimization.
+  </p>
+  <div class="project-links">
+    <a href="https://github.com/singhbhupinder55/real-time-notification-system" target="_blank" class="btn">💻 View Code</a>
+  </div>
+</article>
 
     <article class="card project">
       <h2>Survey REST API</h2>
@@ -77,10 +108,14 @@
       <ul>
         <li>Designed REST endpoints for creating, retrieving, and managing survey-related resources</li>
         <li>Implemented persistence, validation, and structured request handling using Spring Boot and JPA</li>
+        <li>Implemented validation, error handling, and consistent API response structures to ensure reliability</li>
         <li>Tested API behavior with documented Postman requests and expected outcomes</li>
       </ul>
 
       <p><b>Why it matters:</b> This project shows backend engineering fundamentals, database integration, and API design.</p>
+      <div class="project-links">
+        <a href="https://github.com/singhbhupinder55/survey-rest-api" target="_blank" class="btn">💻 View Code</a>
+      </div>
     </article>
 
     <article class="card project">
@@ -104,53 +139,37 @@
       </ul>
 
       <p><b>Why it matters:</b> This project highlights secure software design, code review skills, and practical security-focused development.</p>
+        <div class="project-links">
+        <a href="https://github.com/singhbhupinder55/secure-file-manager" target="_blank" class="btn">💻 View Code</a>
+        </div>
     </article>
 
-    <article class="card project">
-      <h2>Games Box Online</h2>
-      <p>
-        Multi-user game platform using client-server communication, concurrency, and cloud-backed persistence.
-      </p>
+   <article class="card project">
+  <h2>Games Box Online</h2>
+  <p>
+    Distributed multi-user game platform supporting real-time interactions, concurrent clients, and cloud-backed persistence.
+  </p>
 
-      <div class="stack">
-        <span class="tag">Java</span>
-        <span class="tag">AWS</span>
-        <span class="tag">gRPC</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">JavaFX</span>
-      </div>
+  <div class="stack">
+    <span class="tag">Java</span>
+    <span class="tag">AWS</span>
+    <span class="tag">gRPC</span>
+    <span class="tag">MySQL</span>
+    <span class="tag">JavaFX</span>
+  </div>
 
-      <ul>
-        <li>Supported multiple players and game sessions through synchronized client-server interactions</li>
-        <li>Worked with distributed communication patterns and persistent game-related data</li>
-        <li>Combined networking, cloud usage, and desktop client functionality in one system</li>
-      </ul>
+  <ul>
+    <li>Designed and implemented a client-server architecture using gRPC to support real-time communication between multiple players</li>
+    <li>Handled concurrent client connections using a threaded server model, enabling synchronized multi-user gameplay sessions</li>
+    <li>Integrated MySQL for persistent game state and AWS services for scalable backend deployment</li>
+    <li>Developed a JavaFX-based client interface to manage game rooms, sessions, and user interactions</li>
+  </ul>
 
-      <p><b>Why it matters:</b> This project shows distributed systems experience, cloud exposure, and stateful application design.</p>
-    </article>
-
-    <article class="card project">
-      <h2>Heart Health Imaging &amp; Recording System</h2>
-      <p>
-        JavaFX desktop application for managing patient intake, CT scan records, and doctor-facing risk assessment workflows.
-      </p>
-
-      <div class="stack">
-        <span class="tag">Java</span>
-        <span class="tag">JavaFX</span>
-        <span class="tag">OOP</span>
-        <span class="tag">UML</span>
-        <span class="tag">Astah</span>
-      </div>
-
-      <ul>
-        <li>Implemented patient intake, CT scan result entry, patient viewing, and doctor risk evaluation workflows</li>
-        <li>Built role-based access flows and structured desktop UI interactions</li>
-        <li>Applied object-oriented design and UML modeling to support a multi-role application</li>
-      </ul>
-
-      <p><b>Why it matters:</b> This project demonstrates software design, desktop application development, and end-to-end system thinking.</p>
-    </article>
+  <p><b>Why it matters:</b> This project demonstrates distributed systems design, concurrency handling, real-time communication, and scalable backend architecture.</p>
+  <div class="project-links">
+    <a href="https://github.com/singhbhupinder55/games-box-online" target="_blank" class="btn">💻 View Code</a>
+  </div>
+</article>
 
    <article class="card project">
     <h2>SunDevil Connect</h2>
@@ -179,84 +198,85 @@
       UML modeling, design patterns, JavaFX implementation, role-based workflows, and user-focused UI design.
     </p>
 
-    <p class="project-links">
-      <a href="https://www.youtube.com/watch?v=PqMbd3U4-_Q" target="_blank" rel="noopener">Product Demo</a>
-    |
-      <a href="https://github.com/singhbhupinder55/SER460-Software-Analysis-and-Design/tree/main/Project" target="_blank" rel="noopener">GitHub Repository</a>
-    |
-      <a href="assets/sundevil-connect-technical-presentation.pdf" target="_blank">
-      Technical Presentation
-      </a>
-    </p>
+    <div class="project-links">
+      <a href="https://www.youtube.com/watch?v=PqMbd3U4-_Q" target="_blank" class="btn">▶️ Product Demo</a>
+      <a href="https://github.com/singhbhupinder55/SER460-Software-Analysis-and-Design/tree/main/Project/SunDevilConnect" target="_blank" class="btn">💻 View Code</a>
+    </div>
     </article>
   </section>
 
   <section class="section">
-    <h1>Additional Projects</h1>
+  <h1>Additional Projects</h1>
+  <p>
+    Additional projects demonstrating experience in frontend development, mobile applications, networking, and AI integration.
+  </p>
+</section>
+
+<section class="section grid cols-2">
+
+  <article class="card project">
+    <h2>AI-Powered Learning Platform</h2>
     <p>
-      Additional projects that reflect supporting experience in frontend development, mobile development, networking, and game logic.
+      Backend-integrated AI application delivering real-time personalized feedback using OpenAI APIs.
     </p>
-  </section>
 
-  <section class="section grid cols-2">
+    <div class="stack">
+      <span class="tag">Python</span>
+      <span class="tag">Flask</span>
+      <span class="tag">OpenAI API</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">MySQL</span>
+    </div>
 
-    <article class="card project">
-      <h2>Jeopardy Trivia Game</h2>
-      <p>Browser-based trivia game with categories, score tracking, and API-driven question loading.</p>
-      <div class="stack">
-        <span class="tag">Vue.js</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">API Integration</span>
-      </div>
-      <ul>
-        <li>Built a dynamic interface for game flow, score handling, and category-based question rendering</li>
-        <li>Integrated external API data and improved responsiveness through client-side state handling</li>
-      </ul>
-    </article>
+    <ul>
+      <li>Integrated OpenAI APIs to generate real-time responses and personalized learning feedback</li>
+      <li>Designed backend services for handling user requests and processing AI-driven responses efficiently</li>
+      <li>Implemented structured prompt handling to improve response accuracy and consistency</li>
+    </ul>
 
-    <article class="card project">
-      <h2>Location-Based Mobile Map App</h2>
-      <p>Mobile application that uses device location services and map rendering to display user position and selected destinations.</p>
-      <div class="stack">
-        <span class="tag">React Native</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Maps</span>
-      </div>
-      <ul>
-        <li>Handled location permissions and displayed user coordinates on an interactive map</li>
-        <li>Built state-based controls for navigation between multiple points of interest</li>
-      </ul>
-    </article>
+    <p>
+      <b>Why it matters:</b> Demonstrates practical AI integration within backend systems and modern application design.
+    </p>
+  </article>
 
-    <article class="card project">
-      <h2>Chat App</h2>
-      <p>Desktop messaging application using socket-based communication and multithreaded client behavior.</p>
-      <div class="stack">
-        <span class="tag">Java</span>
-        <span class="tag">JavaFX</span>
-        <span class="tag">TCP/UDP</span>
-        <span class="tag">Gradle</span>
-      </div>
-      <ul>
-        <li>Implemented concurrent communication and network-driven UI interaction</li>
-        <li>Worked with client-server messaging, threading, and connection handling</li>
-      </ul>
-    </article>
+  <article class="card project">
+    <h2>Jeopardy Trivia Game</h2>
+    <p>
+      Browser-based trivia game with dynamic categories, score tracking, and API-driven question loading.
+    </p>
 
-    <article class="card project">
-      <h2>ARENA Tournament System</h2>
-      <p>Multi-user Java project for organizing matches, handling game flow, and supporting tournament-style play.</p>
-      <div class="stack">
-        <span class="tag">Java</span>
-        <span class="tag">OOP</span>
-      </div>
-      <ul>
-        <li>Implemented game logic, turn validation, and structured match behavior</li>
-        <li>Contributed to modular system behavior for tournament management workflows</li>
-      </ul>
-    </article>
+    <div class="stack">
+      <span class="tag">Vue.js</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">API Integration</span>
+    </div>
 
-  </section>
+    <ul>
+      <li>Built a dynamic interface for game flow, score handling, and category-based rendering</li>
+      <li>Integrated external APIs and optimized client-side state management for responsiveness</li>
+    </ul>
+  </article>
+
+  <article class="card project">
+    <h2>Chat App</h2>
+    <p>
+      Desktop messaging application using socket-based communication and concurrent client handling.
+    </p>
+
+    <div class="stack">
+      <span class="tag">Java</span>
+      <span class="tag">JavaFX</span>
+      <span class="tag">TCP/UDP</span>
+      <span class="tag">Multithreading</span>
+    </div>
+
+    <ul>
+      <li>Implemented concurrent client-server communication using sockets and threading</li>
+      <li>Managed real-time messaging and connection handling across multiple clients</li>
+    </ul>
+  </article>
+
+  
 
 </main>
 

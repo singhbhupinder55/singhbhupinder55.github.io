@@ -9,143 +9,832 @@
   <meta name="description" content="Bhupinder Singh — Software Engineer specializing in backend systems, distributed applications, and scalable cloud-based software.">
   <meta name="author" content="Bhupinder Singh">
 
+  <meta property="og:title" content="Bhupinder Singh — Software Engineer">
+  <meta property="og:description" content="Backend systems, distributed applications, scalable cloud software. Java · Spring Boot · AWS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://singhbhupinder55.github.io/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/styles.css">
 
-  <title>Bhupinder Singh | Software Engineer</title>
+  <title>Bhupinder Singh — Software Engineer</title>
 </head>
-
 <body>
 
+<!-- ATMOSPHERIC BACKGROUND -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
 <!-- NAV -->
-<nav class="nav">
-  <a class="brand" href="index.html">Bhupinder Singh</a>
-  <div class="links">
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+<nav class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">BS</span>
+    <span class="brand-name">Bhupinder Singh</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#stack">Stack</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="assets/resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
   </div>
 </nav>
 
-<main class="container">
+<main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <img src="assets/profile.jpg" alt="Bhupinder Singh">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
 
-  <div>
-    <h1>Bhupinder Singh</h1>
+      <div class="hero-left">
+        <div class="hero-status reveal">
+          <span class="status-dot"></span>
+          <span>Open to full-time Software Engineering roles</span>
+        </div>
 
-    <p class="lead">
-      Software Engineer specializing in backend systems, distributed applications, and scalable API design.
-      Experienced in building real-time systems, secure software, and cloud-backed applications using Java, Spring Boot, and AWS.
+        <h1 class="hero-name reveal">
+          Bhupinder<br>Singh<span class="cursor-dot">.</span>
+        </h1>
+
+        <div class="hero-role reveal">
+          <span class="role-label">// I build</span>
+          <span class="role-typed" id="typed">backend systems</span><span class="role-cursor">_</span>
+        </div>
+
+        <p class="hero-tagline reveal">
+          Software Engineering graduate from <span class="hl">Arizona State University</span> with hands-on experience designing scalable backend systems and full-stack applications in Java, Spring Boot, React, and AWS. Delivered <span class="hl">six end-to-end projects</span> spanning payments, distributed systems, real-time messaging, AI integration, and educational gaming for NASA.
+        </p>
+
+        <div class="hero-meta reveal">
+          <div class="meta-row"><span class="meta-key">degree</span><span class="meta-val">B.S. Software Engineering · <span class="hl-mono">3.98 GPA</span></span></div>
+          <div class="meta-row"><span class="meta-key">honors</span><span class="meta-val">Summa Cum Laude · Dean's List</span></div>
+          <div class="meta-row"><span class="meta-key">based</span><span class="meta-val">Forsyth, GA · Open to relocation</span></div>
+          <div class="meta-row"><span class="meta-key">auth</span><span class="meta-val">Authorized to work in U.S. — no sponsorship required</span></div>
+        </div>
+
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#projects">View Projects <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-line" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Bhupinder Singh" class="photo">
+          <div class="photo-corner photo-corner-tl" aria-hidden="true"></div>
+          <div class="photo-corner photo-corner-tr" aria-hidden="true"></div>
+          <div class="photo-corner photo-corner-bl" aria-hidden="true"></div>
+          <div class="photo-corner photo-corner-br" aria-hidden="true"></div>
+        </div>
+        <div class="badge">
+          <span class="badge-num">06</span>
+          <span class="badge-text">end-to-end<br>projects shipped</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-main reveal">
+        <p class="about-lead">
+          I'm a backend-leaning Software Engineer focused on the systems behind reliable, scalable products — APIs, real-time pipelines, secure auth, and the cloud infrastructure that holds it all together. My recent work spans <span class="hl">payment processing with Stripe</span>, a <span class="hl">distributed real-time notification service</span> handling thousands of concurrent connections, a <span class="hl">production-style e-commerce platform</span> with JWT auth and RBAC, and a <span class="hl">NASA-sponsored educational game</span> built end-to-end with a team and external stakeholders.
+        </p>
+        <p class="about-lead">
+          I care about correctness under load, clean API contracts, and code that holds up to review. I'm actively looking for full-time SWE roles in backend, full-stack, cloud, or distributed systems.
+        </p>
+      </div>
+
+      <aside class="about-side reveal">
+        <div class="side-block">
+          <div class="side-label">Education</div>
+          <div class="side-title">Arizona State University</div>
+          <div class="side-sub">Ira A. Fulton Schools of Engineering</div>
+          <div class="side-detail">B.S. Software Engineering · Aug 2022 – May 2026</div>
+          <div class="side-detail"><span class="hl-mono">3.98 / 4.00 GPA</span> · Summa Cum Laude · Dean's List</div>
+        </div>
+
+        <div class="side-block">
+          <div class="side-label">Relevant Coursework</div>
+          <div class="side-chips">
+            <span class="chip">Algorithms &amp; Data Structures</span>
+            <span class="chip">Software Architecture</span>
+            <span class="chip">Distributed Systems</span>
+            <span class="chip">Secure Software</span>
+            <span class="chip">Operating Systems</span>
+            <span class="chip">Database Management</span>
+            <span class="chip">Web Applications</span>
+            <span class="chip">Software Analysis &amp; Design</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section" id="stack">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-card reveal">
+        <div class="stack-label">Languages</div>
+        <div class="stack-tags">
+          <span class="mono-tag">Java</span>
+          <span class="mono-tag">Python</span>
+          <span class="mono-tag">JavaScript</span>
+          <span class="mono-tag">TypeScript</span>
+          <span class="mono-tag">C#</span>
+          <span class="mono-tag">C / C++</span>
+          <span class="mono-tag">SQL</span>
+          <span class="mono-tag">Bash</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">Backend &amp; APIs</div>
+        <div class="stack-tags">
+          <span class="mono-tag">Spring Boot</span>
+          <span class="mono-tag">Node.js</span>
+          <span class="mono-tag">Express</span>
+          <span class="mono-tag">Flask</span>
+          <span class="mono-tag">REST</span>
+          <span class="mono-tag">GraphQL</span>
+          <span class="mono-tag">Microservices</span>
+          <span class="mono-tag">JWT</span>
+          <span class="mono-tag">WebSockets</span>
+          <span class="mono-tag">gRPC</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">Frontend</div>
+        <div class="stack-tags">
+          <span class="mono-tag">React</span>
+          <span class="mono-tag">Vue.js</span>
+          <span class="mono-tag">Angular</span>
+          <span class="mono-tag">HTML5</span>
+          <span class="mono-tag">CSS3</span>
+          <span class="mono-tag">Responsive UI</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">Cloud &amp; DevOps</div>
+        <div class="stack-tags">
+          <span class="mono-tag">AWS EC2</span>
+          <span class="mono-tag">S3</span>
+          <span class="mono-tag">RDS</span>
+          <span class="mono-tag">DynamoDB</span>
+          <span class="mono-tag">Docker</span>
+          <span class="mono-tag">GitHub Actions</span>
+          <span class="mono-tag">CI / CD</span>
+          <span class="mono-tag">Linux / Unix</span>
+          <span class="mono-tag">Git</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">Databases</div>
+        <div class="stack-tags">
+          <span class="mono-tag">MySQL</span>
+          <span class="mono-tag">PostgreSQL</span>
+          <span class="mono-tag">MongoDB</span>
+          <span class="mono-tag">SQLite</span>
+          <span class="mono-tag">Redis</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">Testing &amp; Methods</div>
+        <div class="stack-tags">
+          <span class="mono-tag">JUnit</span>
+          <span class="mono-tag">Selenium</span>
+          <span class="mono-tag">Postman</span>
+          <span class="mono-tag">Unit / Integration Tests</span>
+          <span class="mono-tag">Agile / Scrum</span>
+          <span class="mono-tag">Code Reviews</span>
+          <span class="mono-tag">OOP</span>
+          <span class="mono-tag">Secure Coding</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">System Design</div>
+        <div class="stack-tags">
+          <span class="mono-tag">Distributed Systems</span>
+          <span class="mono-tag">Concurrency</span>
+          <span class="mono-tag">Multithreading</span>
+          <span class="mono-tag">Caching</span>
+          <span class="mono-tag">Load Balancing</span>
+          <span class="mono-tag">Scalability</span>
+        </div>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-label">AI / ML</div>
+        <div class="stack-tags">
+          <span class="mono-tag">OpenAI API</span>
+          <span class="mono-tag">Generative AI</span>
+          <span class="mono-tag">Prompt Engineering</span>
+          <span class="mono-tag">REST-based AI Integration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- JPMorgan -->
+      <article class="exp-item reveal">
+        <div class="exp-date">
+          <div class="date-line">Jan 2026 — Present</div>
+          <div class="date-loc">Atlanta, GA</div>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-title">Operations Lead</h3>
+          <div class="exp-org">JPMorgan Chase &amp; Co.</div>
+          <div class="exp-tags">
+            <span class="mono-tag">Enterprise Operations</span>
+            <span class="mono-tag">Compliance</span>
+            <span class="mono-tag">Risk &amp; Audit</span>
+            <span class="mono-tag">Process Optimization</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Operating within a Fortune 50 regulated financial enterprise, gaining direct exposure to compliance, audit, and risk workflows applicable to enterprise software.</li>
+            <li>Identified inefficiencies and implemented data-driven process improvements that reduced transaction errors.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- NASA -->
+      <article class="exp-item reveal">
+        <div class="exp-date">
+          <div class="date-line">Jun 2025 — May 2026</div>
+          <div class="date-loc">Tempe, AZ · Hybrid</div>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-title">Capstone Software Developer</h3>
+          <div class="exp-org">Mission to Psyche (NASA) · Arizona State University</div>
+          <div class="exp-tags">
+            <span class="mono-tag">Unity</span>
+            <span class="mono-tag">C#</span>
+            <span class="mono-tag">REST APIs</span>
+            <span class="mono-tag">Agile</span>
+            <span class="mono-tag">Git</span>
+            <span class="mono-tag">AWS</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built <strong>"Corebound: The Metal Mission,"</strong> a production-ready educational mobile game for NASA's Psyche Mission outreach program, teaching mission science concepts to middle-school learners. Publicly released through the official Mission to Psyche outreach portal.</li>
+            <li>Developed gameplay systems and interactive UI features in Unity (C#) across <span class="metric">six</span> interactive mini-games teaching real Psyche mission concepts; integrated REST APIs for scalable features and real-time interactions across multiple game modules.</li>
+            <li>Partnered directly with NASA sponsor stakeholders to translate Psyche science into engaging, age-appropriate gameplay; led system design discussions, code reviews, testing, and performance optimization across iterative two-week sprint cycles.</li>
+          </ul>
+          <div class="exp-links">
+            <a class="link-arrow" href="https://missiontopsyche-platinum.github.io/platinum_25a_phone_game-se/" target="_blank" rel="noopener">Play live <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Global Career Accelerator -->
+      <article class="exp-item reveal">
+        <div class="exp-date">
+          <div class="date-line">Jul 2025 — May 2026</div>
+          <div class="date-loc">Remote</div>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-title">Software Engineer Internship</h3>
+          <div class="exp-org">The Global Career Accelerator</div>
+          <div class="exp-tags">
+            <span class="mono-tag">Full-Stack</span>
+            <span class="mono-tag">HTML / CSS / JS</span>
+            <span class="mono-tag">Agile</span>
+            <span class="mono-tag">Code Reviews</span>
+            <span class="mono-tag">Git</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built and deployed full-stack web applications using HTML, CSS, JavaScript, and backend services.</li>
+            <li>Delivered features through Agile sprints, code reviews, and Git-based collaboration with clean code principles and incremental release cycles.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Walmart -->
+      <article class="exp-item reveal">
+        <div class="exp-date">
+          <div class="date-line">May 2024 — Dec 2025</div>
+          <div class="date-loc">Prior role</div>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-title">Front End Team Lead</h3>
+          <div class="exp-org">Walmart</div>
+          <div class="exp-tags">
+            <span class="mono-tag">Leadership</span>
+            <span class="mono-tag">Team Coordination</span>
+            <span class="mono-tag">Operations</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led front-end operations and coordinated team activities in a high-volume retail environment; managed workflow efficiency, customer flow, and task prioritization under time constraints.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Truist -->
+      <article class="exp-item reveal">
+        <div class="exp-date">
+          <div class="date-line">Aug 2024 — Mar 2025</div>
+          <div class="date-loc">Prior role</div>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-title">Universal Banker</h3>
+          <div class="exp-org">Truist</div>
+          <div class="exp-tags">
+            <span class="mono-tag">Financial Operations</span>
+            <span class="mono-tag">Compliance</span>
+            <span class="mono-tag">Customer Service</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Handled financial transactions and account services with high accuracy in a regulated environment; maintained compliance standards and ensured secure handling of customer data.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-intro reveal">
+      Production-style projects spanning payments, distributed systems, real-time messaging, secure software, full-stack web, and AI integration.
     </p>
 
-    <div class="kv">
-      <div>Degree</div><div><b>B.S. Software Engineering, May 2026</b></div>
-      <div>GPA</div><div><b>3.98</b></div>
-      <div>Location</div><div><b>Forsyth, GA</b></div>
-      <div>Email</div><div><a href="mailto:bs690155@gmail.com">bs690155@gmail.com</a></div>
-      <div>LinkedIn</div><div><a href="https://www.linkedin.com/in/bhupinder-singh-asu" target="_blank">LinkedIn</a></div>
-      <div>GitHub</div><div><a href="https://github.com/singhbhupinder55" target="_blank">GitHub</a></div>
+    <div class="projects-grid">
+
+      <!-- Event Booking + Payment -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/01</span>
+            <span class="project-type">Backend · Payments</span>
+          </div>
+          <h3 class="project-title">Event Booking &amp; Payment Processing System</h3>
+        </div>
+        <p class="project-lead">
+          Secure payment-processing backend with Stripe integration, transactional consistency under load, and double-booking prevention.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Java</span>
+          <span class="mono-tag">Spring Boot</span>
+          <span class="mono-tag">MySQL</span>
+          <span class="mono-tag">REST APIs</span>
+          <span class="mono-tag">Stripe API</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Built a secure payment-processing backend integrated with Stripe, handling authorization, settlement, and refund flows across concurrent user sessions with parameterized queries and input validation.</li>
+          <li>Implemented <span class="metric">database-level locking</span> and transactional consistency in MySQL to prevent double-booking under high request load; designed RESTful APIs in Spring Boot with comprehensive error handling.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          Demonstrates fintech-grade thinking: payment flows, transactional integrity, concurrency safety, and secure backend design.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Real-Time Notification -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/02</span>
+            <span class="project-type">Distributed · Real-Time</span>
+          </div>
+          <h3 class="project-title">Real-Time Notification System</h3>
+        </div>
+        <p class="project-lead">
+          Distributed real-time messaging service delivering instant notifications across thousands of concurrent connections, designed for horizontal scale on AWS.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Java</span>
+          <span class="mono-tag">Spring Boot</span>
+          <span class="mono-tag">WebSockets</span>
+          <span class="mono-tag">Redis</span>
+          <span class="mono-tag">REST APIs</span>
+          <span class="mono-tag">AWS</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Architected a real-time messaging service using WebSockets and Redis Pub/Sub to deliver instant notifications across <span class="metric">thousands of concurrent</span> connections; designed for horizontal scaling on AWS.</li>
+          <li>Built scalable Spring Boot microservices with asynchronous message handling; wrote JUnit unit and integration tests to validate race conditions, edge cases, and message delivery guarantees under load.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          Distributed systems thinking, real-time communication, scalability, and backend performance optimization.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Full-Stack E-Commerce -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/03</span>
+            <span class="project-type">Full-Stack · Production</span>
+          </div>
+          <h3 class="project-title">Full-Stack E-Commerce Platform</h3>
+        </div>
+        <p class="project-lead">
+          Production-style e-commerce app supporting product browsing, cart, checkout, and order processing — built with secure auth and optimized for throughput.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Java</span>
+          <span class="mono-tag">Spring Boot</span>
+          <span class="mono-tag">React</span>
+          <span class="mono-tag">MySQL</span>
+          <span class="mono-tag">REST APIs</span>
+          <span class="mono-tag">JWT</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Developed a production-style e-commerce application supporting product browsing, cart management, checkout, and order processing for <span class="metric">500+ daily transactions</span> with JWT-based authentication and role-based access control.</li>
+          <li>Designed normalized MySQL schemas with indexed queries and connected the React frontend to Spring Boot REST APIs, reducing average checkout latency by <span class="metric">25%</span> and ensuring data consistency under concurrent load.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          End-to-end full-stack delivery with auth, schema design, performance tuning, and concurrency-safe order handling.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- NASA Psyche -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/04</span>
+            <span class="project-type">Capstone · Sponsor-Backed</span>
+          </div>
+          <h3 class="project-title">NASA Psyche Mission Educational Game</h3>
+        </div>
+        <p class="project-lead">
+          Browser-based educational game built for NASA's Psyche mission outreach — six interactive mini-games teaching real mission science to middle-school learners.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Unity</span>
+          <span class="mono-tag">C#</span>
+          <span class="mono-tag">REST APIs</span>
+          <span class="mono-tag">Agile</span>
+          <span class="mono-tag">Git</span>
+          <span class="mono-tag">AWS</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Built gameplay systems and interactive UI in Unity (C#) across <span class="metric">six</span> mini-games teaching real Psyche mission concepts; publicly released through NASA's Mission to Psyche outreach portal.</li>
+          <li>Integrated REST APIs for scalable features and real-time interactions across multiple game modules; collaborated in an Agile team with direct NASA sponsor stakeholder communication.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          Real sponsor-backed product shipped to a public audience, with stakeholder communication and iterative delivery.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://missiontopsyche-platinum.github.io/platinum_25a_phone_game-se/" target="_blank" rel="noopener">Play live <span aria-hidden="true">↗</span></a>
+          <a class="link-arrow" href="https://github.com/MissionToPsyche-Platinum/platinum_25a_phone_game-se" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- AI Language -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/05</span>
+            <span class="project-type">AI Integration</span>
+          </div>
+          <h3 class="project-title">AI-Powered Language Learning Web App</h3>
+        </div>
+        <p class="project-lead">
+          Flask + Angular web app integrating OpenAI's API to deliver adaptive vocabulary and grammar feedback to live learners.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Python</span>
+          <span class="mono-tag">Flask</span>
+          <span class="mono-tag">Angular</span>
+          <span class="mono-tag">OpenAI API</span>
+          <span class="mono-tag">MySQL</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Integrated OpenAI's API into a Flask + Angular web application serving <span class="metric">200+ learners</span> with adaptive vocabulary and grammar feedback.</li>
+          <li>Improved answer accuracy by <span class="metric">40%</span> through structured prompt engineering and response handling; covered with unit and integration tests.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          Practical AI integration with real users, prompt engineering rigor, and measurable accuracy improvements.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Secure File Manager -->
+      <article class="project-card reveal">
+        <div class="project-head">
+          <div class="project-meta">
+            <span class="project-num">/06</span>
+            <span class="project-type">Secure Software</span>
+          </div>
+          <h3 class="project-title">Secure File Manager (JFM)</h3>
+        </div>
+        <p class="project-lead">
+          Java desktop application focused on authentication, authorization, and secure file management workflows — built with static analysis baked into the pipeline.
+        </p>
+        <div class="project-stack">
+          <span class="mono-tag">Java</span>
+          <span class="mono-tag">RBAC</span>
+          <span class="mono-tag">JUnit</span>
+          <span class="mono-tag">SpotBugs</span>
+          <span class="mono-tag">FindSecBugs</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Implemented role-based access control, password security, and safer authentication workflows; refactored insecure code patterns with defensive programming.</li>
+          <li>Used static analysis (SpotBugs, FindSecBugs) and secure coding concepts to identify and remediate vulnerable areas.</li>
+        </ul>
+        <div class="project-why">
+          <span class="why-label">Why it matters</span>
+          Security-focused engineering, code review skills, and remediation of real vulnerabilities.
+        </div>
+        <div class="project-links">
+          <a class="link-arrow" href="https://github.com/singhbhupinder55/secure-file-manager" target="_blank" rel="noopener">View Code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
     </div>
 
-    <div class="taglist">
-      <span class="tag">Java</span>
-      <span class="tag">Spring Boot</span>
-      <span class="tag">REST APIs</span>
-      <span class="tag">Distributed Systems</span>
-      <span class="tag">AWS</span>
-      <span class="tag">Docker</span>
-      <span class="tag">Security</span>
+    <!-- ADDITIONAL PROJECTS -->
+    <div class="section-subhead reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Additional Projects</h2>
+      <div class="section-line"></div>
     </div>
 
-    <div class="btnbar">
-      <a class="btn primary" href="projects.html">View Projects</a>
-      <a class="btn green" href="assets/resume.pdf" target="_blank">Download Resume</a>
-      <a class="btn ghost" href="contact.html">Contact</a>
-    </div>
-  </div>
-</section>
-
-<!-- MAIN SECTIONS -->
-<section class="section grid cols-2">
-
-  <!-- WHAT I DO -->
-  <article class="card">
-    <h2>What I Do</h2>
-
-    <p>
-      I design and build backend systems and distributed applications with a focus on performance, scalability, and reliability.
-      My work includes real-time communication systems, REST APIs, secure software, and cloud deployment.
+    <p class="section-intro reveal">
+      Earlier coursework and side projects covering distributed gaming, full software-lifecycle design, REST APIs, and networking.
     </p>
 
-    <ul>
-      <li>Backend development using Java, Spring Boot, and REST APIs</li>
-      <li>Real-time systems using WebSockets and event-driven architecture</li>
-      <li>Secure systems with authentication and role-based access control</li>
-      <li>Cloud deployment using AWS and Docker</li>
-    </ul>
-  </article>
+    <div class="mini-grid">
 
-  <!-- FEATURED PROJECT -->
-  <article class="card">
-    <h2>Featured Project — NASA Psyche Mission 🚀</h2>
+      <article class="mini-card reveal">
+        <h4 class="mini-title">Games Box Online</h4>
+        <p class="mini-desc">Distributed multi-user game platform with gRPC client-server architecture, threaded concurrent connections, and MySQL persistence on AWS.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">Java</span>
+          <span class="mono-tag-sm">gRPC</span>
+          <span class="mono-tag-sm">AWS</span>
+          <span class="mono-tag-sm">JavaFX</span>
+        </div>
+        <a class="link-arrow-sm" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">Code ↗</a>
+      </article>
 
-    <p>
-      Developed a browser-based educational game for NASA’s Psyche mission to support public engagement and mission awareness.
-    </p>
+      <article class="mini-card reveal">
+        <h4 class="mini-title">SunDevil Connect</h4>
+        <p class="mini-desc">Multi-role campus engagement platform with dashboards for students, club leaders, and admins. Full lifecycle: UML, MVC, design patterns.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">JavaFX</span>
+          <span class="mono-tag-sm">FXML</span>
+          <span class="mono-tag-sm">UML</span>
+          <span class="mono-tag-sm">Design Patterns</span>
+        </div>
+        <a class="link-arrow-sm" href="https://www.youtube.com/watch?v=PqMbd3U4-_Q" target="_blank" rel="noopener">Demo ↗</a>
+      </article>
 
-    <ul>
-      <li>Built gameplay systems and interactive UI in Unity using C#</li>
-      <li>Integrated backend APIs to support scalable features and real-time interactions</li>
-      <li>Collaborated in an Agile team to deliver a production-ready, sponsor-backed application</li>
-    </ul>
+      <article class="mini-card reveal">
+        <h4 class="mini-title">Survey REST API</h4>
+        <p class="mini-desc">Backend REST API for surveys, items, instances, and responses with persistence, validation, and structured error handling.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">Spring Boot</span>
+          <span class="mono-tag-sm">JPA</span>
+          <span class="mono-tag-sm">MySQL</span>
+          <span class="mono-tag-sm">Postman</span>
+        </div>
+        <a class="link-arrow-sm" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">Code ↗</a>
+      </article>
 
-    <div class="btnbar">
-      <a class="btn green" href="https://missiontopsyche-platinum.github.io/platinum_25a_phone_game-se/" target="_blank">
-        🎮 Play Game
-      </a>
-      <a class="btn ghost" href="projects.html">View More Projects</a>
+      <article class="mini-card reveal">
+        <h4 class="mini-title">Jeopardy Trivia Game</h4>
+        <p class="mini-desc">Browser-based trivia game with dynamic categories, score tracking, and API-driven question loading with optimized client-side state.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">Vue.js</span>
+          <span class="mono-tag-sm">JavaScript</span>
+          <span class="mono-tag-sm">REST API</span>
+        </div>
+        <a class="link-arrow-sm" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">Code ↗</a>
+      </article>
+
+      <article class="mini-card reveal">
+        <h4 class="mini-title">Chat App</h4>
+        <p class="mini-desc">Desktop messaging app with concurrent socket-based client-server communication using TCP/UDP and multithreading.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">Java</span>
+          <span class="mono-tag-sm">TCP / UDP</span>
+          <span class="mono-tag-sm">Multithreading</span>
+        </div>
+        <a class="link-arrow-sm" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">Code ↗</a>
+      </article>
+
+      <article class="mini-card reveal">
+        <h4 class="mini-title">AI-Powered Learning Platform</h4>
+        <p class="mini-desc">Earlier OpenAI integration project: Python/Flask backend serving structured AI-driven feedback with prompt-engineering controls.</p>
+        <div class="mini-tags">
+          <span class="mono-tag-sm">Python</span>
+          <span class="mono-tag-sm">Flask</span>
+          <span class="mono-tag-sm">OpenAI</span>
+        </div>
+        <a class="link-arrow-sm" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">Code ↗</a>
+      </article>
+
     </div>
-  </article>
+  </section>
 
-  <!-- TECHNICAL STRENGTHS -->
-  <article class="card">
-    <h2>Technical Strengths</h2>
-
-    <ul>
-      <li>Java, Spring Boot, SQL, REST APIs</li>
-      <li>WebSockets, Redis, gRPC, distributed systems</li>
-      <li>AWS EC2, Docker, Git, Gradle</li>
-      <li>Secure software and system design</li>
-    </ul>
-  </article>
-
-  <!-- EDUCATION -->
-  <article class="card">
-    <h2>Education</h2>
-
-    <ul>
-      <li><b>Arizona State University</b></li>
-      <li>B.S. Software Engineering</li>
-      <li>May 2026</li>
-      <li>GPA: 3.98</li>
-      <li>Summa Cum Laude</li>
-    </ul>
-
-    <div class="btnbar">
-      <a class="btn green" href="about.html">Learn More</a>
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-line"></div>
     </div>
-  </article>
 
-</section>
+    <div class="contact-grid reveal">
+      <div class="contact-lead">
+        <p class="contact-headline">
+          I'm actively looking for full-time Software Engineering roles in <span class="hl">backend</span>, <span class="hl">full-stack</span>, <span class="hl">cloud</span>, and <span class="hl">distributed systems</span>.
+        </p>
+        <p class="contact-sub">
+          Authorized to work in the U.S. without current or future sponsorship. Open to relocation, remote, or hybrid roles.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <a class="contact-row" href="mailto:bs690155@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-val">bs690155@gmail.com</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/bhupinder-singh-asu" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-val">linkedin.com/in/bhupinder-singh-asu</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">github.com/singhbhupinder55</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-row" href="assets/resume.pdf" target="_blank" rel="noopener">
+          <span class="contact-label">Resume</span>
+          <span class="contact-val">Download PDF</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <div class="contact-row contact-row-static">
+          <span class="contact-label">Location</span>
+          <span class="contact-val">Forsyth, GA · USA</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer class="footer">
-  © Bhupinder Singh • Built for GitHub Pages
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-brand">Bhupinder Singh</span>
+      <span class="footer-mono">// software engineer · backend · distributed systems</span>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:bs690155@gmail.com">Email</a>
+      <a href="https://github.com/singhbhupinder55" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/bhupinder-singh-asu" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Bhupinder Singh. Designed &amp; built by hand.</span>
+  </div>
 </footer>
+
+<script>
+  // ============ TYPING ANIMATION ============
+  (function() {
+    const target = document.getElementById('typed');
+    if (!target) return;
+    const phrases = [
+      'backend systems',
+      'distributed services',
+      'real-time APIs',
+      'scalable cloud apps',
+      'full-stack platforms'
+    ];
+    let pi = 0, ci = 0, deleting = false;
+    function tick() {
+      const phrase = phrases[pi];
+      if (!deleting) {
+        ci++;
+        target.textContent = phrase.slice(0, ci);
+        if (ci === phrase.length) {
+          deleting = true;
+          return setTimeout(tick, 1600);
+        }
+        return setTimeout(tick, 65 + Math.random() * 50);
+      } else {
+        ci--;
+        target.textContent = phrase.slice(0, ci);
+        if (ci === 0) {
+          deleting = false;
+          pi = (pi + 1) % phrases.length;
+          return setTimeout(tick, 220);
+        }
+        return setTimeout(tick, 30);
+      }
+    }
+    setTimeout(tick, 700);
+  })();
+
+  // ============ SCROLL REVEAL ============
+  (function() {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(el => el.classList.add('in-view'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => io.observe(el));
+  })();
+
+  // ============ NAV SCROLL STATE ============
+  (function() {
+    const nav = document.getElementById('nav');
+    if (!nav) return;
+    function onScroll() {
+      if (window.scrollY > 30) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // ============ MOBILE NAV TOGGLE ============
+  (function() {
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>

@@ -46,6 +46,7 @@
     <a class="nav-cta" href="assets/resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
   </div>
 </nav>
+<div class="nav-overlay" id="navOverlay"></div>
 
 <main id="top">
 
@@ -796,16 +797,29 @@
   (function() {
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
+    const overlay = document.getElementById('navOverlay');
     if (!toggle || !links) return;
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-      toggle.classList.toggle('open');
-    });
+
+    function closeMenu() {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      if (overlay) overlay.classList.remove('open');
+    }
+
+    function toggleMenu() {
+      const isOpen = links.classList.contains('open');
+      if (isOpen) { closeMenu(); }
+      else {
+        links.classList.add('open');
+        toggle.classList.add('open');
+        if (overlay) overlay.classList.add('open');
+      }
+    }
+
+    toggle.addEventListener('click', toggleMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
     links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        links.classList.remove('open');
-        toggle.classList.remove('open');
-      });
+      a.addEventListener('click', closeMenu);
     });
   })();
 </script>

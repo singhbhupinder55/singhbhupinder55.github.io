@@ -229,6 +229,9 @@ main, .footer { position: relative; z-index: 1; }
 
 .nav-cta span { color: var(--cyan); }
 
+/* overlay hidden by default on desktop */
+.nav-overlay { display: none; }
+
 /* mobile nav toggle */
 .nav-toggle {
   display: none;
@@ -1348,6 +1351,12 @@ main {
   body { padding-top: 54px; }
   .nav-toggle { display: block; }
 
+  .nav {
+    background: var(--bg) !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
   .nav-links {
     position: fixed;
     top: 0; right: 0;
@@ -1367,6 +1376,18 @@ main {
 
   .nav-links.open { transform: translateX(0); }
   .nav-links a { font-size: 16px; }
+
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 35;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-overlay.open {
+    display: block;
+  }
 
   .hero-grid { gap: 40px; }
   .hero-right { order: -1; }

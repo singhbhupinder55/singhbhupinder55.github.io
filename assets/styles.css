@@ -65,6 +65,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 68px;
+}
+
 ::selection {
   background: var(--cyan-soft);
   color: var(--cyan-2);
@@ -125,8 +129,10 @@ main, .footer { position: relative; z-index: 1; }
    NAVIGATION
    ============================================================ */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -1329,6 +1335,7 @@ main {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
+  body { padding-top: 58px; }
   main { padding: 0 24px; }
   .nav { padding: 14px 24px; }
   .nav.scrolled { padding: 12px 24px; }
@@ -1338,6 +1345,7 @@ main {
 }
 
 @media (max-width: 760px) {
+  body { padding-top: 54px; }
   .nav-toggle { display: block; }
 
   .nav-links {
